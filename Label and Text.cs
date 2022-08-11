@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MaskedTextBox_And_PictureBox
+namespace TextAndLabel2
 {
     public partial class Form1 : Form
     {
@@ -19,12 +19,17 @@ namespace MaskedTextBox_And_PictureBox
 
         private void button1_Click(object sender, EventArgs e)
         {
-            listBox1.Items.Add(maskedTextBox1.Text + "-" + maskedTextBox2.Text+ "-" + maskedTextBox3.Text + "-" + maskedTextBox4.Text + "");
+            label4.Text = "Aysegul";
+            label5.Text = "Yilmaz";
+            label6.Text = "Computer Engineer";
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            listBox1.Items.Add(dateTimePicker1.Text);
+            //textBox1.Text = "Software Engineering";
+            label7.Text = textBox1.Text;
+
         }
     }
 }
