@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Char_Variable
+namespace WinFormsApp1
 {
     public partial class Form1 : Form
     {
@@ -19,9 +19,14 @@ namespace Char_Variable
 
         private void button1_Click(object sender, EventArgs e)
         {
-            char group;
-            group = 'g';
-            label1.Text = group.ToString();
+            int number1, number2, sum,sub,mult,div;
+            number1 = Convert.ToInt16(textBox1.Text);
+            number2 = Convert.ToInt16(textBox2.Text);
+            sum = number1 + number2;
+            sub = number1 - number2;
+            mult = number1 * number2;
+            div = number1 / number2;
+            MessageBox.Show("Sum: " + sum + "\nSub:" + sub + "\nMult: " + mult + "\nDiv: " + div);
         }
     }
 }

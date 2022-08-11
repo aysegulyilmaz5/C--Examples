@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Char_Variable
+namespace Users_Variables
 {
     public partial class Form1 : Form
     {
@@ -19,9 +19,17 @@ namespace Char_Variable
 
         private void button1_Click(object sender, EventArgs e)
         {
-            char group;
-            group = 'g';
-            label1.Text = group.ToString();
+            int number;
+            number = Convert.ToInt16(textBox1.Text);
+            label2.Text = number.ToString();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int number, result;
+            number = Convert.ToInt16(textBox2.Text);
+            result = number * number * number;
+            label4.Text = result.ToString();
         }
     }
 }
